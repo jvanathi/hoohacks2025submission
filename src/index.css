@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* coin flip change*/
+.preference-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #d1d5db;
+  border-radius: 3px;
+  outline: none;
+}
+
+.preference-slider::-webkit-slider-runnable-track {
+  background: #d1d5db;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.preference-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+  margin-top: -5px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.preference-slider::-moz-range-track {
+  background: #d1d5db;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.preference-slider::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+  border: none;
+}
+
+/* coin flip visuals */
+.coin {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: gold;
+  margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.heads {
+  background: #2563eb; /* blue */
+}
+
+.tails {
+  background: #ef4444; /* red */
+  transform: rotateY(180deg);
+}
